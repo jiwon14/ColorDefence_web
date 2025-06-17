@@ -1,0 +1,54 @@
+
+input[type="radio"] {
+  display: none;
+}
+
+
+.job-group label,
+.color-group label {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 14px;
+  margin: 8px;
+  border: 3px solid transparent;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+.job-group label {
+  background-color: #bbaeaea6; 
+  color: #2d3436; 
+}
+
+.job-group input[type="radio"]:checked + label {
+  border: 3px solid #2d3436; 
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.08);
+  position: relative;
+  z-index: 1;
+}
+
+
+.color-group label {
+  color: white; 
+}
+
+
+#color-yellow + label,
+#color-white + label {
+  color: black;
+}
+
+.color-group input[type="radio"]:checked + label {
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(1.08);
+  position: relative;
+  z-index: 1;
+}   
